@@ -5,25 +5,25 @@ export default function Footer() {
     <div className="bg-[#120b48] text-white md:px-[80px] px-16 py-[70px] grid gap-10 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 ">
       <div>
         {" "}
-        <img src='./whitelogo' alt="" />
+        <img src='./whitelogo.svg' alt="" />
       </div>
       <div className="">
-        <p className="cursor-pointer font-bold text-[14px] ">Menu</p>
-        <p className="cursor-pointer py-4">Home</p>
-        <p className="cursor-pointer">Converter</p>
-        <p className="cursor-pointer py-4">How It Works</p>
+        <p className="cursor-pointer font-semibold text-[14px] font-['Sora']">Menu</p>
+        <p className="cursor-pointer font-normal py-4 font-['Work_sans']">Home</p>
+        <p className="cursor-pointer font-normal font-['Work_sans']">Converter</p>
+        <p className="cursor-pointer font-normal py-4 font-['Work_sans']">How It Works</p>
       </div>
       <div>
-        <p className="cursor-pointer font-bold text-[14px]">About Us</p>
-        <p className="cursor-pointer py-4">About</p>
-        <p className="cursor-pointer">Contact Us</p>
-        <p className="cursor-pointer py-4">Privacy Policy</p>
+        <p className="cursor-pointer font-semibold text-[14px] font-['Sora']">About Us</p>
+        <p className="cursor-pointer font-normal py-4 font-['Work_sans']">About</p>
+        <p className="cursor-pointer font-normal font-['Work_sans']">Contact Us</p>
+        <p className="cursor-pointer font-normal py-4 font-['Work_sans']">Privacy Policy</p>
       </div>
       <div>
-        <p className="cursor-pointer font-bold text-[14px]">Screen Record</p>
-        <p className="cursor-pointer py-4">Browser Window</p>
-        <p className="cursor-pointer">Desktop</p>
-        <p className="cursor-pointer py-4">Application</p>
+        <p className="cursor-pointer font-semibold text-[14px] font-['Sora']">Screen Record</p>
+        <p className="cursor-pointer font-normal py-4 font-['Work_sans']">Browser Window</p>
+        <p className="cursor-pointer font-normal font-['Work_sans']">Desktop</p>
+        <p className="cursor-pointer font-normal py-4 font-['Work_sans']">Application</p>
       </div>
     </div>
   );

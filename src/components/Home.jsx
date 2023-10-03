@@ -21,17 +21,17 @@ export default function Home() {
         <main className="">
           <div className="md:px-[80px] px-16 border-b-[30px] py-[70px] md:pt-[130px] flex flex-col md:flex-row md:justify-between items-center">
             <div className="max-w-[35rem] w-[100%]">
-              <h1 className="font-bold text-[40px] md:text-[4rem] leading-tight  text-center m-auto md:text-left w-[100%] ">
+              <h1 className="font-bold text-[40px] md:text-[4rem] leading-tight font-[Sora] text-center m-auto md:text-left w-[100%] ">
                 Show Them Don&apos;t just tell{" "}
               </h1>
               <p className="text-[1.2rem] text-[ rgba(0, 0, 0, 0.75)] md:text-left w-full py-6 leading-8 ">
                 Help your friends and loved ones by creating and sending videos
                 on how to get things done on a website.
               </p>
-              <button className="text-[14px] flex items-center m-auto md:m-0 text-white bg-[#120b48] hover:bg-[#605c84] hover:shadow-xl hover:duration-700 p-4 px-6 rounded-xl ">
+              <button className="text-[14px] flex items-center m-auto md:m-0 text-white bg-[#120b48] hover:bg-[#605c84] hover:shadow-xl hover:duration-700 py-[1.38rem] px-6 rounded-[0.5rem] ">
                 <a
                   href="https://drive.google.com/drive/folders/1SCjSqhZXxS-QnEzO7vnXyOCRd7hfJTQp"
-                  className="pt-[8px]"
+                  className="font-['Work_Sans'] text-[1.125rem]"
                   target="_blank" rel="noreferrer"
                 >
                   Install HelpMeOut
