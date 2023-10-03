@@ -1,0 +1,162 @@
+.app_home {
+  &_main {
+    padding-block: 4rem 0;
+    &_nav {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+
+      ul {
+        @include flex_center();
+        justify-content: flex-start;
+        gap: 1rem;
+
+        li {
+          color: $light_text;
+          font-family: Work Sans;
+          font-size: 1.3rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          cursor: pointer;
+          transition: all 0.4s ease-in-out;
+          scale: 0.9;
+          &.active,
+          &:hover {
+            color: $dark_text;
+            font-weight: 500;
+            scale: 1;
+          }
+        }
+      }
+    }
+
+    &_contents {
+      &_header {
+        color: $dark_header;
+        font-family: Sora;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: normal;
+        @include flex_center();
+        justify-content: flex-start;
+        gap: 1rem;
+        margin: 2rem 0;
+        @media screen and (min-width: 578px) {
+          font-size: 1.4rem;
+          gap: 1.5rem;
+        }
+
+        span {
+          cursor: pointer;
+          scale: 1;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            scale: 1.2;
+          }
+        }
+      }
+
+      &_bottom {
+        .video_image {
+          padding: 1rem;
+          width: 100%;
+          height: 100%;
+          max-height: 31rem;
+          border-radius: 1.5rem;
+          border: 1px solid rgba(182, 179, 198, 0.6);
+          background: $video_img_bg;
+        }
+      }
+
+      &_inputs {
+        margin: 2.5rem 0;
+        &_inner {
+          color: #4b4b4b;
+          font-family: Work Sans;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.6125rem;
+          width: 100%;
+
+          @media screen and (min-width: 992px) {
+            @include flex_center();
+            justify-content: space-between;
+            gap: 1rem;
+          }
+        }
+      }
+
+      .transcript {
+        &_sec {
+          margin: 4rem 0;
+        }
+        &_inner {
+          display: grid;
+          gap: 1rem;
+          h3 {
+            color: #000;
+            font-family: Work Sans;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+
+        &_texts {
+          margin: 2rem 0;
+          width: 100%;
+          max-height: 20rem;
+          overflow-y: scroll;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-track {
+            border-radius: 2px;
+            background: #f5f5f5;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #d9d9d9;
+            border-radius: 1px;
+          }
+
+          &_inner {
+            display: grid;
+            gap: 2.5rem;
+          }
+
+          &_box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+            gap: 1.5rem;
+            color: $black;
+            font-family: Work Sans;
+            font-style: normal;
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+
+            @media screen and (min-width: 400px) {
+              font-size: 1.25rem;
+              gap: 2.5rem;
+            }
+
+            .transcripts {
+              width: 100%;
+              max-width: 65rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
